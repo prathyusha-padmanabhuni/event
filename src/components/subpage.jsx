@@ -4,13 +4,12 @@ import '../styles_css/subpage.css';
 import Navbar1 from './navbar1'
 import logo from "../images/logo.jpg";
 import   '../styles_css/navbar.css';
-import { Link, renderMatches,useParams } from 'react-router-dom';
-import {ReactSession} from 'react-client-session';
+import { useParams } from 'react-router-dom';
+ 
 import { useEffect } from 'react';
 import axios from 'axios';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser,faLock } from '@fortawesome/free-solid-svg-icons';
-import Navbar from  "./navbar";
+ 
+ 
 import {useNavigate} from 'react-router-dom';
 import FormData from "form-data";
 import  Footer from "./footer";
