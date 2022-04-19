@@ -1,7 +1,7 @@
 import React, {useState,useEffect}  from 'react';
 import { Link,useParams } from 'react-router-dom';
 import axios from 'axios';
-import {ReactSession} from 'react-client-session';
+ 
 import Footer from './footer';
 var ad={}
 var pic="/../images/";

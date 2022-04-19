@@ -1,5 +1,5 @@
 import React, {useState,useEffect}  from 'react';
-import { Link,renderMatches,useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import axios from 'axios';
 import Navbar1 from './navbar1';
 import Footer from './footer';

@@ -6,14 +6,14 @@ import SubNavbar from './subcomp/subnavbar';
 import   '../styles_css/navbar.css';
 import   '../styles_css/mainpage.css';
 // import { Link, renderMatches } from 'react-router-dom';
-import {ReactSession} from 'react-client-session';
+ 
 // import { useEffect } from 'react';
 import axios from 'axios';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faUser,faLock } from '@fortawesome/free-solid-svg-icons';
 // import Navbar from  "./navbar";
 import logo from "../images/logo.jpg";
-import { BrowserRouter , Route,Routes ,useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import {useNavigate} from 'react-router-dom';
 import FormData from "form-data";
 import  Footer from "./footer";

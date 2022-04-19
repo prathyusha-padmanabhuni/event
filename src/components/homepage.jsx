@@ -1,15 +1,14 @@
 import React, {useState}  from 'react';
 import '../styles_css/signup.css';
-import Navbar1 from './navbar1'
 import logo from "../images/logo.jpg";
 import   '../styles_css/navbar.css';
-import { Link, renderMatches } from 'react-router-dom';
-import { faBorderNone } from '@fortawesome/free-solid-svg-icons';
-import {useNavigate} from 'react-router-dom';
+import { Link  } from 'react-router-dom';
+ 
+ 
 
 
 function HomePage(){
-    let navigate=useNavigate();
+     
     const [colour, setColour] = useState("#fafafa");
     const [colour1, setColour1] = useState("#fafafa");
         const slide1={

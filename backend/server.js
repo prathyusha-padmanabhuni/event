@@ -1,17 +1,17 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-
 require('dotenv').config();
-var path=require('path')
+ 
 const app = express();
 const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
-app.use('/public',express.static("C:/Users/riktam/Desktop/eventmngmnt/public"));
+// app.use('/public',express.static("C:/Users/riktam/Desktop/eventmngmnt/public"));
 // console.log(path.join(__dirname+"/public"))
-// app.use(express.static(path.join(__dirname + "public")))
-// app.use('/public',express.static("/../..\\/public"));
+// app.use(express.static(path.join(__dirname , "/../public")))
+// console.log(path.join(__dirname , "/../public"))
+app.use('/public',express.static("../public"));
 const uri ="mongodb+srv://admin-prathyu:Prathyusha123@cluster0.l7q0r.mongodb.net/eventmgt";
  
 mongoose.connect(uri,
