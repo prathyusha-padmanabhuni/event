@@ -4,15 +4,15 @@ import '../styles_css/OuterPage.css';
 import Navbar1 from './navbar1'
 import   '../styles_css/navbar.css';
 // import { Link, renderMatches } from 'react-router-dom';
- 
+import {ReactSession} from 'react-client-session';
 // import { useEffect } from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {   faEdit } from '@fortawesome/free-solid-svg-icons';
+import {   faEdit, faLeftLong} from '@fortawesome/free-solid-svg-icons';
 // import Navbar from  "./navbar";
- 
+import { BrowserRouter , Route,Routes } from "react-router-dom";
 import {useNavigate,Link } from 'react-router-dom';
- 
+import FormData from "form-data";
 import Footer from "./footer";
  
 // import SubPage from "./subpage" ;

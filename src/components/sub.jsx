@@ -1,17 +1,17 @@
 import React, {useState,useEffect}  from 'react';
 //import '../styles_css/OuterPage.css';
- 
+import SubNavbar from './subcomp/subnavbar';
 //import   '../styles_css/mainpage.css';
 import axios from 'axios';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faUser,faLock } from '@fortawesome/free-solid-svg-icons';
- 
+import FormData from "form-data";
 import  Footer from "./footer";
-import { Link,useParams  } from 'react-router-dom';
+import {useNavigate,Link,useParams  } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {   faEdit, faEye,faTrash} from '@fortawesome/free-solid-svg-icons';
 import Navbar1 from "./navbar1";
- 
+import logo from "../images/logo.jpg";
 var bg=""
  
 function DisplayMainInfo (){
@@ -41,7 +41,10 @@ function DisplayMainInfo (){
                   backgroundColor:props.headercolor,
                   borderBottom: "7px solid "+props.headerBottom
               }
-               
+              const navbr={
+                  
+        
+              }
               const imgstyle={
                 width:"70px",
                 height:"70px",
@@ -192,7 +195,12 @@ function Usersubinfo( props ) {
         fontFamily:props.information?props.information[1]:"serif",
          
      }
-      
+     const information22={
+        color:"red", 
+        width:"60px",
+        height:"30px" ,  
+        backgroundColor:"green"    
+    }
      const fotr={
          height:"30px",
         //  backgroundColor:"red"
