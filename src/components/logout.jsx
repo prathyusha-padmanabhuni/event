@@ -4,7 +4,8 @@ function LogOut () {
     let navigate=useNavigate();
     
      useEffect(()=>{
-        localStorage.setItem("username", "")
+         if(localStorage.getItem("username"))
+            localStorage.setItem("username", "")
         navigate("/");
     },[])
      

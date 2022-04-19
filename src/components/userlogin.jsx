@@ -100,5 +100,8 @@ function LoginUser () {
         </div>
         </div>
       );
+      else{
+        return(<div>try to logout</div>);
+      }
 }
 export {  LoginUser };

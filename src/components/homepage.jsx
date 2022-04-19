@@ -48,7 +48,7 @@ function HomePage(){
             <ul>
                 <li><a href="#aboutUs" className="nav-link">aboutUs</a></li>
                 <li><Link to="/signUp" className="nav-link">signUp</Link></li>
-                <li><Link to="/login" className="nav-link">login</Link></li>
+                <li><Link to="/logout" className="nav-link">logout</Link></li>
             </ul>
          </div>
         <div className="container" >
