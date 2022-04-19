@@ -27,7 +27,14 @@ const usersubRouter = require('./routes/usersubrouter');
 app.use('/users', usersRouter);
 app.use('/main', usersmainRouter);
 app.use('/sub', usersubRouter);
- 
+if (process.env.NODE_ENV === 'production') {
+    // Set Static Folder
+    app.use(express.static('client/build'));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    });
+};
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`);
 });
